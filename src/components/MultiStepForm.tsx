@@ -7,6 +7,7 @@ import SelectPlan from "./SelectPlan";
 import AddOns from "./AddOns";
 import Summary from "./Summary";
 import ThankYou from "./ThankYou";
+import bgimage from "../assets/images/bg-sidebar-desktop.svg";
 
 const MultiStepForm = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -30,7 +31,10 @@ const MultiStepForm = () => {
           className='d-flex flex-column flex-xl-row'
           style={{ height: "100%" }}
         >
-          <StyledCol className='col-4 p-xl-4'>
+          <StyledCol
+            className='col-4 p-xl-4'
+            style={{ backgroundImage: `${bgimage}` }}
+          >
             <ul className='list-group d-flex justify-content-center flex-row flex-xl-column'>
               {formSteps.map((step, index) => (
                 <li
@@ -183,7 +187,6 @@ const MultiStepForm = () => {
 export default MultiStepForm;
 
 const StyledCol = styled.div`
-  background-image: url("../src/assets/images/bg-sidebar-desktop.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

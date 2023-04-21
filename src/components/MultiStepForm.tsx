@@ -193,7 +193,7 @@ const StyledCol = styled.div`
   background-size: cover;
   border-radius: 10px;
   @media (max-width: 1200px) {
-    background-image: url(${bgimagemobile})!important;
+    background-image: url(${bgimagemobile}) !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -206,7 +206,7 @@ const StyledCol = styled.div`
 const StyledSection = styled.section`
   background-color: white;
   padding: 1rem;
-  width: 58vw;
+  width: 55vw;
   @media (max-width: 1200px) {
     width: 100%;
     height: 100%;

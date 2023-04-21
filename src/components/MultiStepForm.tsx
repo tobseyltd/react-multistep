@@ -206,7 +206,7 @@ const StyledCol = styled.div`
 const StyledSection = styled.section`
   background-color: white;
   padding: 1rem;
-  width: 56vw;
+  width: 58vw;
   @media (max-width: 1200px) {
     width: 100%;
     height: 100%;
@@ -216,7 +216,7 @@ const StyledSection = styled.section`
 `;
 
 const StyledFormContent = styled.form`
-  height: 38rem;
+  height: 35rem;
   @media (max-width: 1200px) {
     padding: 1rem;
     margin-top: -3rem;

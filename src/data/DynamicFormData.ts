@@ -1,3 +1,8 @@
+import arcade from '../assets/images/icon-arcade.svg'
+import advanced from '../assets/images/icon-advanced.svg'
+import pro from '../assets/images/icon-pro.svg'
+
+
 
 export const formSteps = [
     "Your Info",
@@ -11,19 +16,19 @@ export const formSteps = [
       plan: "Arcade",
       priceMonth: 9,
       priceYear: 90,
-      img: "../src/assets/images/icon-arcade.svg",
+      img: arcade,
     },
     {
       plan: "Advanced",
       priceMonth: 12,
       priceYear: 120,
-      img: "../src/assets/images/icon-advanced.svg",
+      img: advanced,
     },
     {
       plan: "Pro",
       priceMonth: 15,
       priceYear: 150,
-      img: "../src/assets/images/icon-pro.svg",
+      img: pro,
     },
   ]
 

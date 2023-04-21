@@ -60,7 +60,6 @@ const SelectPlan = ({
               </StyledPlanLabel>
             </StyledPlanDiv>
           ))}
-         
         </div>
         {hasPlanErrors}
         <StyledSwitchDiv>

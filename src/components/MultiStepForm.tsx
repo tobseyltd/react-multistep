@@ -8,6 +8,7 @@ import AddOns from "./AddOns";
 import Summary from "./Summary";
 import ThankYou from "./ThankYou";
 import bgimage from "../assets/images/bg-sidebar-desktop.svg";
+import bgimagemobile from "../assets/images/bg-sidebar-mobile.svg";
 
 const MultiStepForm = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -192,7 +193,7 @@ const StyledCol = styled.div`
   background-size: cover;
   border-radius: 10px;
   @media (max-width: 1200px) {
-    background-image: url("../src/assets/images/bg-sidebar-mobile.svg");
+    background-image: url(${bgimagemobile});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

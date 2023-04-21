@@ -22,7 +22,7 @@ const MultiStepForm = () => {
   const onSubmit = (data: FieldValues) => {
     setFormData(data);
   };
-  console.log(formData);
+  console.log(errors.email);
   return (
     <>
       <StyledSection className='container rounded'>
@@ -75,7 +75,10 @@ const MultiStepForm = () => {
                     required: true,
                     minLength: 10,
                   })}
-                  registerEmail={register("email", { required: true })}
+                  registerEmail={register("email", {
+                    required: true,
+                    pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  })}
                   registerPhone={register("phone", { required: true })}
                   hasNameErrors={
                     <>
@@ -95,8 +98,12 @@ const MultiStepForm = () => {
                     <>
                       {errors.email?.type === "required" && (
                         <p className='text-danger'>
-                          The email field is required and must contain a valid
-                          @domain.tld
+                          The email field is required
+                        </p>
+                      )}
+                      {errors.email?.type === "pattern" && (
+                        <p className='text-danger'>
+                          The email field must contain a valid pattern!
                         </p>
                       )}
                     </>

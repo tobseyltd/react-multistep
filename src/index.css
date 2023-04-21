@@ -1,0 +1,14 @@
+body {
+    
+    background: hsl(229, 24%, 87%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh
+}
+
+.active-step {
+    background-color: hsl(206, 94%, 87%) !important;
+    color: black !important;
+}
+

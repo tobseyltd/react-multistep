@@ -193,7 +193,7 @@ const StyledCol = styled.div`
   background-size: cover;
   border-radius: 10px;
   @media (max-width: 1200px) {
-    background-image: url(${bgimagemobile});
+    background-image: url(${bgimagemobile})!important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,6 +1,6 @@
 # Multistepform with form validation
 
-> LIVE VERSION: https://celebrated-puppy-65b210.netlify.app/
+> LIVE VERSION: https://mellow-lokum-1a99fd.netlify.app/
 
 ## Table of contents
 

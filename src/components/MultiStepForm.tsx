@@ -33,7 +33,7 @@ const MultiStepForm = () => {
         >
           <StyledCol
             className='col-4 p-xl-4'
-            style={{ backgroundImage: `${bgimage}` }}
+            style={{ backgroundImage: `url(${bgimage})` }}
           >
             <ul className='list-group d-flex justify-content-center flex-row flex-xl-column'>
               {formSteps.map((step, index) => (
